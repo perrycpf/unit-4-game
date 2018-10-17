@@ -1,0 +1,96 @@
+body, html {
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    height: 100%;
+    text-align: center;
+    font-size: 19px;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0px 10px 10px 10px;
+}
+.container-fluid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.character-pic {
+    height: 120px;
+    width: 160px;
+} 
+#fight-section, #enemies-section, #player-section, #defender-section, #gameMessage {
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    line-height: 1.5;
+}
+#playerDiv, #enemiesDiv, #defenderDiv {
+    margin-top: 10px;
+}
+.card {
+    text-align: center;
+    border: solid 2px;
+    border-color: white;
+    height: 155px;
+    max-width: 160px;
+}
+#enemies-section, #characters-section {
+    cursor:pointer;
+    margin-left: 1px;
+}
+.card-title, .card-footer {
+    padding: 2px 0px 2px 0px;
+    margin: 0px;
+    color: #0d5350;
+    font-weight: bold;
+    font-size: 16px;
+}
+button {
+    border-radius: 5px;
+    background: grey;
+    color: white;
+    border: solid 1px #ffffff;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 100px;
+    margin: 20px 0px 0px 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+button:hover:enabled {
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(-90deg,grey, rgba(0, 255, 85, 0.164));
+    border: solid 1px #ffffff;
+    color: rgb(119, 15, 15);
+    cursor: pointer;
+}
+.fa {
+    font-weight: bolder;
+}
+#restart {
+    margin-left: 15px;
+}
+.blink_me {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
