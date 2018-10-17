@@ -14,7 +14,7 @@ Each time the player attacks the defender, the attack power will be increased by
 
 The defender will perform counter attack, and its counter attack power will never change.
 
-No characters in the game can heal or recover health points.
+No characters in the game can heal or recover health points. The health points will be flashing if it has dropped to 50 or less.
 
 A winning player should pick his/her player and defender one by one wisely by fighting an enemy with low counter attack power first. 
 
