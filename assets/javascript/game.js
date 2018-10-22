@@ -50,7 +50,7 @@ $(document).ready(function() {
   var audioElement; // Sound object
 
   // Create card template for character
-  function CreateCard(cardData) {
+  function createCard(cardData) {
     var cardTemplate = [
       '<div class="card">',
         '<div class="card-title rounded-top" id=', cardData.id, '-title>', cardData.name || 'No name provided',
@@ -60,12 +60,12 @@ $(document).ready(function() {
         '</div>',
       '</div>'  
     ];
-    return $(cardTemplate.join(''));
+    return cardTemplate.join('');
   };
 
   // Render a fighter to area
   function printCharacter (charData, charColor, renderArea) {
-    $(renderArea).append(CreateCard(charData));
+    $(renderArea).append(createCard(charData));
     updateCharColor(charData, charColor);
   }; 
 
